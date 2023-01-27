@@ -43,7 +43,7 @@ Demo for video:
 
 ```
 ## Result Video
-{%youtube E8Nj7RwXf0s %}
+[![Watch the video](https://img.youtube.com/vi/E8Nj7RwXf0s/sddefault.jpg)](https://youtu.be/E8Nj7RwXf0s)
 
 ## Citation
 ## License

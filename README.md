@@ -7,12 +7,7 @@ In addition, it can also complete labeling tasks rapidly, and even 3D object det
 
 
 ## Installation
-### Docker image
-If you would rather not have to install anything, you can pull the docker image.
-```
-docker pull ...
-docker run ...
-```
+
 ### Install from source
 1. computer request first: [Unreal](https://www.unrealengine.com/en-US/download) ```4.27.X```, [Airsim](https://github.com/Microsoft/AirSim) ```1.6```
 2. clone and submodule

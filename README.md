@@ -13,7 +13,7 @@ In addition, it can also complete labeling tasks rapidly, and even 3D object det
  ![](https://img.shields.io/badge/airsim-1.6-yellow)
  ![](https://img.shields.io/badge/unreal-4.27.x-purple)
 ### Device
-- GPU : RTX 4090
+- GPU : RTX 3090
 - CPU : i9-12900
 - RAM : 32 GB
 ### Docker image

@@ -4,9 +4,7 @@ from datetime import datetime
 from GetObjectInfo import AirsimClient,airsim
 from  EnvSetting import *
 from Unreal2YOLO import unreal2yolo
-import os,re
-import glob
-
+from RL_train import RL_train
 class Unreal:
     def __init__(self) -> None:
         self.airsim_client  = AirsimClient()
@@ -70,7 +68,7 @@ class Unreal:
 
         img_count = 0
         cur_mAP = 0
-        thres = 0.5
+        thres = args.thres
 
         while cur_mAP < thres:
             try:
@@ -92,29 +90,8 @@ class Unreal:
                     return
 
             if(img_count == 8 ):
-                file_paths = glob.glob(r"label_data/*.png")
-                with open('train_list.txt', 'w') as f:
-                    for file_path in file_paths:
-                        f.write(file_path + '\n')
-
-                #command = 'python train.py --workers 8 --device 0 --batch-size 8 --data data/coco.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights "" --name yolov7 --hyp data/hyp.scratch.p5.yaml'
-                #os.system(command)
-                        
-                # with open('result.txt', 'r') as f:
-                #     last_result = f.readlines()[-1]
-                #     if re.search(r'[\d\/ .]+[\w]+[\d. ]+', last_result):
-                #         mAP, mAP095 = last_result.split()[10], last_result.split()[11]
-                #         print(mAP, mAP095)
-                #         cur_mAP = float(mAP095)
-                #     else:
-                #         print('command error')
-                #         break
-                for file_path in file_paths:
-                    os.unlink(file_path)
-                    os.unlink(os.path.splitext(file_path)[0] + '.txt')
-                    
+                RL_train().train()
                 img_count = 0
-                return
         
 
 if __name__ == "__main__":

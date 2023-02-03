@@ -1,4 +1,4 @@
-# VR-RL
+# Reinforcement Learning for Object Detection in Unreal
 ## Introduction
 
 we proposed a method to expand the data and real-time training architecture through VR to improve the accuracy of the model and reduce labor costs and time consumed.

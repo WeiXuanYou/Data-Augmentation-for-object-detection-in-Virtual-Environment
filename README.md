@@ -16,24 +16,18 @@ In addition, it can also complete labeling tasks rapidly, and even 3D object det
 - GPU : RTX 3090
 - CPU : i9-12900
 - RAM : 32 GB
-### Docker image
-If you would rather not have to install anything, you can pull the docker image.
-```
-docker pull ...
-docker run ...
-```
-### Install from source
-1. computer request first: [Unreal](https://www.unrealengine.com/en-US/download) ```4.27.X```, [Airsim](https://github.com/Microsoft/AirSim) ```1.6```
-2. clone and submodule
 
-We use YOLOv7 to train real time , so we include YOLOv7 as a submodule.
-```
-git clone ...
-cd ...
+### Installation steps
+1. Download [Unreal](https://www.unrealengine.com/en-US/download) ```4.27.X```
+2. Download [Airsim](https://github.com/Microsoft/AirSim) ```1.6```
+### Download repository
+ ```
+git clone https://github.com/WeiXuanYou/Reinforcement-Learning-for-Object-Detection-in-Unreal.git
+cd Reinforcement-Learning-for-Object-Detection-in-Unreal
 git submodule init
 git submodule update
 ```
-3. Download a pretrained model from YOLOv7
+###  Download a pretrained model from YOLOv7
 ```
 wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 ```

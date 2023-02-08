@@ -4,7 +4,7 @@
 we proposed a method to expand the data and real-time training architecture through VR to improve the accuracy of the model and reduce labor costs and time consumed.
 
 In addition, it can also complete labeling tasks rapidly, and even 3D object detection can be quickly obtained.
-![](https://i.imgur.com/Jz7AbXF.jpg)
+![](doc/img/demo.jpg)
 
 ## Installation
 ### Development environment
@@ -47,7 +47,7 @@ Demo for video:
 
 ```
 ## Result Video
-[![Watch the video](https://img.youtube.com/vi/E8Nj7RwXf0s/sddefault.jpg)](https://youtu.be/E8Nj7RwXf0s)
+[![Watch the video](doc/img/demo.gif)](doc/img/demo.gif)
 
 ## Citation
 ## License

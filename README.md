@@ -1,4 +1,4 @@
-# Reinforcement Learning for Object Detection in Unreal
+# Data Augmentation for object detection in virtual environment
 ## Introduction
 
 we proposed a method to expand the data and real-time training architecture through VR to improve the accuracy of the model and reduce labor costs and time consumed.

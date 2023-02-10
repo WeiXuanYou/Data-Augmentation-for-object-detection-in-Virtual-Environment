@@ -38,15 +38,6 @@ python train.py
 ```
 
 ## Demo
-Demo for image:
-```
-
-```
-Demo for video:
-```
-
-```
-## Result Video
 [![Watch the video](doc/img/demo.gif)](doc/img/demo.gif)
 
 ## Citation
